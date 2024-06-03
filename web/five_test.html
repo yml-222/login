@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.container {
+				width: 1226px;
+				height: 460px;
+				margin: 100px auto;
+				position: relative;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.left {
+				width: 41px;
+				height: 69px;
+				position: absolute;
+				left: 234px;
+				top: 50%;
+				translate: 0 -50%;
+				background-image: url('img/icon-slides.png');
+				background-position: -84px 0;
+				cursor: pointer;
+			}
+
+			.left:hover {
+				background-position: 0px 0;
+			}
+
+			.right {
+				width: 41px;
+				height: 69px;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				translate: 0 -50%;
+				background-image: url('img/icon-slides.png');
+				background-position: -125px 0;
+				cursor: pointer;
+			}
+
+			.right:hover {
+				background-position: -41px 0;
+			}
+
+			.zsd {
+				position: absolute;
+				bottom: 20px;
+				right: 30px;
+			}
+
+			.zsd span {
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				background-color: gray;
+				margin-left: 2px;
+				border: 2px solid lightgray;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+
+			.zsd span:hover {
+				background-color: white;
+			}
+
+			.nav {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 234px;
+				height: 420px;
+				background-color: rgba(105,101,101,.6);
+				padding: 20px 0;
+			}
+			.nav li {
+				list-style: none;
+				padding: 0 30px;
+				height: 42px;
+				line-height: 42px;
+				color: white;
+				font-size: 14px;
+				cursor: pointer;
+			}
+			.nav li:hover{
+				background-color: #ff6700;
+			}
+			.nav li span:first-child {
+				float: left;
+			}
+
+			.nav li span:last-child {
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="./img/swiper.webp">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="zsd">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="nav">
+				<li><span>手机</span><span>></span></li>
+				<li><span>电视</span><span>></span></li>
+				<li><span>家电</span><span>></span></li>
+				<li><span>笔记本 平板</span><span>></span></li>
+				<li><span>出行 穿戴</span><span>></span></li>
+				<li><span>耳机 音箱</span><span>></span></li>
+				<li><span>健康 儿童</span><span>></span></li>
+				<li><span>生活 箱包</span><span>></span></li>
+				<li><span>智能 路由器</span><span>></span></li>
+				<li><span>电源 配件</span><span>></span></li>
+			</div>
+		</div>
+	</body>
+</html>
