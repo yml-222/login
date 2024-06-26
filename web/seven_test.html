@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>姓名+学号后三位</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			ul{
+				background-color: black;
+			}
+			ul::after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			ul>li{
+				float: left;
+				width: 20%;
+				text-align: center;
+				color: white;
+				line-height: 42px;
+				position: relative;
+			}
+			
+			.subnav{
+				position: absolute;
+				top: 42px;
+				left: 0;
+				right: 0;
+				background-color: black;
+				transform: scale(0);
+				transition: transform .5s;
+				transform-origin: 50% 0;
+			}
+			ul>li:hover .subnav{
+				transform: scale(1);
+			}
+			.subnav>div:hover{
+				cursor: pointer;
+				color: black;
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				菜单1
+				<div class="subnav">
+					<div>子菜单1</div>
+					<div>子菜单2</div>
+					<div>子菜单3</div>
+				</div>
+			</li>
+			<li>菜单2</li>
+			<li>菜单3</li>
+			<li>
+				菜单4
+				<div class="subnav">
+					<div>子菜单1</div>
+					<div>子菜单2</div>
+					<div>子菜单3</div>
+					<div>子菜单4</div>
+					<div>子菜单5</div>
+				</div>
+			</li>
+			<li>菜单5</li>
+		</ul>
+	</body>
+</html>
